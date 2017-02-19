@@ -1,0 +1,108 @@
+//-------------------------
+//-----------PAGE TAG
+//-------------------------
+
+
+.b-tagHeader {
+	background-color: $cinnabar;
+  @extend .clearfix;
+
+  padding-top: 13.3rem;
+  padding-bottom: 4.5rem;
+      margin-bottom: 13.6rem;
+
+      @include breakpoint (tablet) {
+         padding-top: 6.5rem;
+            padding-bottom: 0.5rem;
+             margin-bottom: 13.2rem;
+      }
+
+          @include breakpoint (phone) {
+             padding-top: 7rem;
+             padding-bottom: 0;
+                margin-bottom: 7rem;
+
+           }
+
+  h1 {
+    color: $fireRed;
+    font-weight: 700;
+
+    font-size: 8.8rem;
+    float: left;
+    width: 40%;
+    &:first-letter {
+      color: $white;
+    }
+
+    @include breakpoint (toDesktop) {
+      float: none;
+      width: 100%;
+    }
+
+    @include breakpoint (tablet) {
+
+       font-size: 10rem;
+    }
+    @include breakpoint (phone) {
+      font-size: 8.6rem;
+   left: -0.6rem;
+   position: relative;
+    }
+
+  }
+
+  p {
+    color: $white;
+    position: relative;
+    line-height: 2;
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+    float: right;
+    padding-top: 1rem;
+    width: 54.8%;
+
+
+    @include breakpoint (toDesktop) {
+      float: none;
+      width: 100%;
+    }
+
+    @include breakpoint (tablet) {
+      font-size: 2rem;
+letter-spacing: 0.01rem;
+padding-left: 0.5rem;
+padding-top: 5rem;
+    }
+    @include breakpoint (phone) {
+    font-size: 3.1rem;
+letter-spacing: 0.01rem;
+line-height: 1.5;
+padding-left: 0.2rem;
+padding-top: 4rem;
+max-height: 295px;
+ overflow: hidden;
+}
+
+    .fade {
+      background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, #eb2929 100%);
+      bottom: 0;
+      display: block;
+      position: absolute;
+      width: 100%;
+
+            height: 2.3rem;
+
+                @include breakpoint (tablet) {
+                  height: 11rem;
+                   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, #eb2929 70%);
+                }
+
+                @include breakpoint (phone) {
+
+        height: 18rem;
+                }
+
+    }
+  }
+}

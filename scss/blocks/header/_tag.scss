@@ -4,4 +4,23 @@
 
 &.page-tag {
 	background-color: $cinnabar;
+
+
+	.b-header__menu {
+	  &--list-item {
+	    a {
+	      color: $white;
+	    }
+	  }
+	  &:after {
+	    border-top: 0.2rem solid $white;
+	  }
+	}
+
+	.b-header__socials {
+		a {
+			color: $white;
+		}
+	}
+
 }
