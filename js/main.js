@@ -48,13 +48,9 @@ var menuCalc = function() {
 }
 
 //call bp handler
-
-
 $(window).resize(function(){
-   location.reload();
   menuCalc();
 });
-
 menuCalc();
 });
 
