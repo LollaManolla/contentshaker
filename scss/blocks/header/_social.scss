@@ -1,0 +1,82 @@
+//-------------------------
+//-------------------HEADER socials
+//-------------------------
+
+&__socials {
+	  font-family:$fontFontello ;
+		//background-color: $white;
+
+
+
+	&--list-item {
+		display: inline-block;
+			padding: 0 0.55rem;
+		@include breakpoint (toDesktop) {
+			padding: 0;
+		}
+
+		a {
+			display: block;
+		 color: $black;
+
+		}
+		&.item-facebook   {
+			a {
+				 font-size: 1.75rem;
+				 @include breakpoint (tablet) {
+						font-size: 3rem;
+						  padding-right: 10rem;
+				 }
+				 @include breakpoint (phone) {
+					 font-size: 3.6rem;
+	 padding-left: 0.7rem;
+	 padding-right: 17rem;
+				 }
+			 }
+		}
+		&.item-twitter    {
+			a {
+				 font-size: 1.89rem;
+				 @include breakpoint (tablet) {
+						font-size: 3rem;
+						  padding-right: 9rem;
+				 }
+				 @include breakpoint (phone) {
+					 font-size: 3.6rem;
+			     padding-right: 15.8rem;
+				 }
+			 }
+		}
+
+		&.item-linkedin   {
+			a {
+				 font-size: 1.89rem;
+				 @include breakpoint (tablet) {
+						font-size: 3.4rem;
+						  padding-right: 8.5rem;
+				 }
+				 @include breakpoint (phone) {
+					 font-size: 3.8rem;
+	     padding-right: 15.5rem;
+				 }
+			 }
+		}
+
+		&.item-youtube  {
+			a {
+				 font-size: 2rem;
+ position: relative;
+ top: 0.15rem;
+ @include breakpoint (tablet) {
+		font-size: 3.55rem;
+ }
+ @include breakpoint (phone) {
+	    font-size: 4.2rem;
+	  top: 0.1rem;
+ }
+			 }
+		}
+	}
+
+
+}

@@ -1,0 +1,95 @@
+//-------------------------
+//---------------GLOBAL CLASSES
+//-------------------------
+
+//GLOBAL FOR SITE
+.site-wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	//padding: 0 6.4rem;
+	@include  breakpoint (tablet) {
+		//padding: 0 7rem;
+	}
+	@include  breakpoint (phone) {
+		//padding: 0 5.4rem;
+	}
+}
+
+.content-wrapper{
+
+		//max-width: 1182px;
+		margin: 0 auto 9.2rem;
+		padding: 0 13rem;
+		@include  breakpoint (tablet) {
+			padding: 0 7rem;
+			margin:0 auto 15rem;
+		}
+		@include  breakpoint (phone) {
+			padding: 0 5.4rem;
+			 margin: 0 auto 15.6rem;
+		}
+
+}
+//GLOBAL FOR ARTICLES
+.article-title {
+	//font-family: $baseFont;
+	color: $black;
+}
+
+.article-intro {
+	//font-family: $baseFont;
+	font-size: 1.4rem;
+	@include  breakpoint (tablet) {
+		font-size: 3rem;
+	}
+	@include  breakpoint (phone) {
+		font-size: 2.8rem;
+	}
+}
+
+.article-date {
+	//font-family: $baseFont;
+	font-size: 1.3rem;
+	&:after {
+		content: "-";
+		margin: 0 0.4rem;
+	}
+}
+
+.article-author {
+	//font-family: $baseFont;
+	font-weight: 700;
+	color: $cinnabar;
+	font-size: 1.2rem;
+
+	 &:before {
+		 content: "\25CF";
+		 position: relative;
+		 vertical-align: sub;
+
+				 //  @include vertical-align();
+
+		 font-size: 3.7rem;
+		  padding-right:1rem;
+			top: 0.2rem;
+	 }
+
+}
+
+.tag-parent {
+	//font-family: $baseFont;
+	font-size: 1.3rem;
+}
+
+.hide {
+	display: none;
+}
+
+//GLOBAL FOR LOGO but not sure if it should stay here
+.logo {
+	display: block;
+	img {
+		//width: 100%;
+	}
+
+}

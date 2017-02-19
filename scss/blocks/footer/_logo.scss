@@ -1,0 +1,57 @@
+//-------------------------
+//-------------------FOOTER logo
+//-------------------------
+
+&__logo {
+	position: relative;
+	z-index: 2;
+	   opacity: 0.15;
+
+
+     width: 100%;
+		 margin-left: auto;
+		 margin-right: auto;
+		 text-align: center;
+
+
+
+}
+
+.logo {
+	img {
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__top,
+	&__bottom {
+		display: block;
+ margin: 0 auto;
+	}
+	&__top {
+
+		left: 3rem;
+ position: relative;
+ width: 35%;
+    margin-bottom: 1.5rem;
+
+   @include breakpoint (tablet) {
+ width: 63%;
+ }
+   @include breakpoint (phone) {
+   width: 72%;
+	   margin-bottom: 1rem;
+ }
+
+	}
+	&__bottom {
+     position: relative;
+     width: 7.5%;
+   @include breakpoint (tablet) {
+	width: 14%;
+}
+   @include breakpoint (phone) {
+  width: 17%;
+}
+
+	}
+}

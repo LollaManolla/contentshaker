@@ -1,0 +1,44 @@
+//-------------------------
+//---------------TYPOGRAPHY
+//-------------------------
+
+//------FONT-FACE
+@include fontFace (CenturyGothicBold, /CenturyGothicBold, null, null, eot woff ttf svg);
+@include fontFace (fontello, /fontello, null, null, eot woff ttf svg);
+
+
+//------FONT SIZES CALCULATION
+// DO NOT CHNAGE BASE FONT SIZE, ITS EASIER FOR CALCULATION
+// CHANGE FONT-SIZE USING THIS FORMULA
+// A = 10 (font size, always use this for start calc)
+// B = 768 (resolution we are looking at in the desing)
+// X = (A / B) * 100
+
+//------DIMENSIONS
+$baseFontSize: 10; // DO NOT CHANGE THIS
+
+html {
+    $fontSizePX: $baseFontSize + 'px';
+    font-size  : $fontSizePX;
+	//change this part
+    @include breakpoint (desktop) {
+        font-size: 0.69444444444vw; //14px
+    }
+    @include breakpoint (tablet) {
+        font-size: 1.0101010101vw;//30px
+    }
+    @include breakpoint (phone) {
+        font-size:  1.33333333333vw;//30px
+    }
+    @include breakpoint (wideScreen) {
+        font-size:  10px;
+    }
+}
+
+
+
+//------GLOBAL FONT SETTINGS
+body {
+    font-size: 100%;
+    font-family: $baseFont;
+}

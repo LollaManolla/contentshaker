@@ -1,0 +1,15 @@
+//-------------------------
+//---------------buttons
+//-------------------------
+
+.c-btn {
+	@include borderRadius (5em);
+	font-family: $baseFont;
+	font-size: 2rem;
+	line-height: auto;
+	cursor: pointer;
+	&--red {
+		background-color: $cinnabar	;
+		color:$white;
+	}
+}

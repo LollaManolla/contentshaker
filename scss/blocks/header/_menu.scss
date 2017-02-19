@@ -1,0 +1,103 @@
+//-------------------------
+//-------------------HEADER menu
+//-------------------------
+
+&__menuwrapper {
+  position: relative;
+  // background-color: $white;
+
+
+  float: right;
+   width: 50%;
+   text-align: right;
+
+
+
+  @include breakpoint (tablet) {
+    top: 13.5rem;
+      width: 100%;
+       float: left;
+       text-align: left;
+  }
+  @include breakpoint (phone) {
+    top: 13rem;
+      width: 100%;
+      float: left;
+      text-align: left;
+  }
+}
+&__menu {
+  //background-color: $white;
+  position: relative;
+
+    display: inline-block;
+
+    right: 4.5rem;
+  top: 0.3rem;
+
+
+
+  @include breakpoint (toDesktop) {
+    right: auto;
+    top: auto;
+    display: block;
+  }
+
+  @include breakpoint (tablet) {
+    padding-bottom: 33.3rem;
+  }
+  @include breakpoint (phone) {
+    padding-bottom: 32.4rem;
+  }
+  &--list-item {
+    display: inline-block;
+    padding: 0 0.97rem;
+
+    @include breakpoint (toDesktop) {
+      display: block;
+      padding: auto;
+    }
+
+    @include breakpoint (tablet) {
+      padding: 0 0rem 5rem;
+
+    }
+
+    @include breakpoint (phone) {
+      padding: 0 0rem 4.6rem;
+
+    }
+    a {
+      color: $black;
+      font-weight: normal;
+
+font-size: 1.5rem;
+  font-family: $proFont ;
+
+      @include breakpoint (toDesktop) {
+        font-weight: 700;
+        color: $lightGray;
+        font-size: 7rem;
+      }
+
+
+    }
+
+
+}
+&:after {
+  border-top: 0.2rem solid $black;
+  content: "";
+  position: absolute;
+  right: -3.2rem;
+  top: 0.7rem;
+  width: 1.5rem;
+
+    @include breakpoint (toDesktop) {
+      content: "";
+      border: none;
+    }
+
+
+}
+}

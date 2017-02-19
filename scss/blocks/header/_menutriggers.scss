@@ -1,0 +1,21 @@
+//-------------------------
+//-------------------HEADER menu triggers
+//-------------------------
+
+&__menutriggers {
+	display: none;
+
+	@include breakpoint (tablet) {
+	position: absolute;
+	top:7.8rem;
+	right:7rem;
+	z-index: 2;
+}
+
+	@include breakpoint (phone) {
+	position: absolute;
+	top:9rem;
+	right:5.4rem;
+	z-index: 2;
+}
+}

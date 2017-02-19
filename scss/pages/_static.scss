@@ -1,0 +1,57 @@
+//-------------------------
+//-----------ERROR 404 PAGE
+//-------------------------
+
+.staticPage {
+	padding-top: 5rem;
+	padding-bottom: 10rem;
+	overflow: hidden;
+    clear: both;
+
+	&__content {
+		float: right;
+		width: 56%;
+		padding-top: 2rem;
+		h1, h2, p {
+			font-size: 1.6rem;
+			line-height: 1.9;
+			@include breakpoint(tablet) {
+				font-size: 1.2rem;
+			}
+			@include breakpoint(phone) {
+				font-size: 3rem;
+				line-height: 1.8;
+			}
+		}
+		@include breakpoint(phone) {
+	    	float: none;
+	    	width: 80%;
+	    	padding-top: 0;
+	    }
+	}
+	&__title {
+		float: left;
+		clear: both;
+		width: 30%;
+		height: auto;
+		font-family: $baseFont;
+		font-weight: bold;
+		font-size: 8.8rem;
+		line-height: 1.2;
+		color: $whiteSmoke;
+		@include breakpoint(tablet) {
+			font-size: 7rem;
+		}
+		@include breakpoint(phone) {
+			float: none;
+			margin-bottom: 9rem;
+			font-size: 8.8rem;
+		}
+	}
+	h2 {
+		margin-bottom: 2rem;
+		@include breakpoint(phone) {
+			margin-bottom: 5rem;
+		}
+	}	
+}

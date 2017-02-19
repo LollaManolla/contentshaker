@@ -1,0 +1,10 @@
+//-------------------------
+//-------------------BLOCK TEASER BIG
+//-------------------------
+&--big {
+padding: 0 6.3rem;
+
+@include breakpoint (phone) {
+   padding: 0 5.3rem;
+}
+}

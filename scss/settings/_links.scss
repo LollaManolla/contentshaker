@@ -1,0 +1,45 @@
+///------------------------------------
+//    #SETTINGS
+//------------------------------------
+
+// Globaly available variables
+
+
+
+
+
+//-------------------------
+//    #Links
+//    Global default settings
+//	  for hyperlinks
+//-------------------------
+
+
+
+
+
+//-------------------------
+//    #LINKS VARIABLE
+//    Define global default
+//    hyperlinks colors
+//-------------------------
+//
+
+ $color-links:                  $cinnabar;
+ $color-links-visited:          $cinnabar;
+ $color-links-hover:            $swan;
+
+
+a {
+  color: $color-links;
+  text-decoration: none;
+
+  &:visited {
+    color: $color-links-visited;
+  }
+
+  &:hover {
+    color: $color-links-hover;
+  }
+
+}

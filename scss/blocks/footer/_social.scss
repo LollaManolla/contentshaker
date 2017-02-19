@@ -1,0 +1,45 @@
+//-------------------------
+//-------------------FOOTER socials
+//-------------------------
+
+&__socials {
+	  font-family:$fontFontello ;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	padding-bottom: 2.8rem;
+	padding-top: 4.8rem;
+@include breakpoint (tablet) {
+ padding-top: 6.35rem;
+  padding-bottom: 3.8rem;
+ }
+@include breakpoint (phone) {
+ padding-bottom: 7rem;
+ padding-top: 10.5rem;
+ }
+
+	&--list-item {
+		display: inline-block;
+			padding: 0 0.7rem;
+		@include breakpoint (tablet) {
+			padding: 0 0.8rem;
+		}
+		@include breakpoint (phone) {
+			padding: 0 2rem;
+		}
+		a {
+			display: block;
+		 font-size:1.65rem;
+		 color: $black;
+			@include breakpoint (tablet) {
+				 font-size: 2.35rem;
+			}
+			@include breakpoint (phone) {
+				 font-size: 4.3rem;
+			}
+		}
+
+	}
+}

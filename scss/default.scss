@@ -1,0 +1,51 @@
+//------------------------------------------------------------------------------
+//   Import all styles
+//-----------------------------------------------------------------------------
+
+//------CORE
+// Core files prepare DOM by making HTML elements consistent across browsers
+// and removing built-in browser styling.
+@import 'core/all';
+
+//------MIXINS
+@import 'mixins/all';
+
+//------SETTINGS FOR PROJECT
+//------variable, breakpoints, typo
+@import 'settings/paths',
+		'settings/variables',
+		'settings/typography',
+		'settings/links',
+		'settings/global'; // mozda staviti ovo u komponente pa iseci na manje delove??
+
+
+//------BLOCKS
+@import 'blocks/header/header',
+		'blocks/footer/footer',
+		'blocks/teaser/default',
+		'blocks/list/default',
+		'blocks/mostRead/default',
+		'blocks/tagHeader/default';
+
+
+//------COMPONENTS
+@import 'components/buttons/buttons',
+'components/buttons/button.burger',
+'components/buttons/button.loadMore',
+		'components/form/articleForm';
+
+//------WIDGETS
+@import 'widgets/pagination/pagination',
+		'widgets/stickySocial/stickySocial';
+
+//------PAGES
+@import 'pages/static',
+		'pages/error',
+		'pages/article/default';
+
+
+//------TRUMPS
+@import 'trumps/clearfix',
+		'trumps/hacks',
+		'trumps/ie',
+		'trumps/print';

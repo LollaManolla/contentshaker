@@ -1,0 +1,12 @@
+//-------------------------
+//-------------------BLOCK ARTICLE LIST
+//-------------------------
+.b-list {
+
+	@extend .clearfix;
+	margin-left: -1rem;
+    margin-right: -1rem;
+
+
+	@import "article";
+}

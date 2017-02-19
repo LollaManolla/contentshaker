@@ -1,0 +1,38 @@
+//-------------------------
+//---------------button load more
+//-------------------------
+
+.c-btn-loadmore {
+@extend .clearfix;
+border: none;
+display:table;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+font-weight: 700;
+
+	margin-top: 1.8rem;
+	padding: 2rem 1rem 2.5rem;
+	width: 23.444%;
+
+
+	@include box-shadow(
+	    0 26px 42px rgba(235,41,41,0.5)
+	 );
+
+   @include breakpoint (tablet) {
+ margin-top: 17.8rem;
+   padding: 2.7rem 1rem 3rem;
+	 width: 42%;
+
+    font-size: 2.5rem;
+
+ }
+   @include breakpoint (phone) {
+		 font-size: 3.3rem;
+	     margin-top: 15.5rem;
+	     padding: 3.3rem 1rem 4.3rem;
+	     width: 74%;
+ }
+
+}

@@ -1,0 +1,36 @@
+//-------------------------
+//---------------BUTTON BURGER
+//-------------------------
+
+.hamburger,
+.cross {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+
+  @include breakpoint (tablet) {
+    width: 4.6rem;
+  }
+
+  @include breakpoint (phone) {
+    width: 6rem;
+  }
+
+
+}
+
+.cross {
+
+  @include breakpoint (tablet) {
+    position: relative;
+    right: 0;
+    display: none;
+  }
+
+  @include breakpoint (phone) {
+    position: relative;
+    right: 0;
+    display: none;
+  }
+}
