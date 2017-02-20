@@ -4,36 +4,37 @@
 
 &__menuwrapper {
   position: relative;
-  // background-color: $white;
-
 
   float: right;
    width: 50%;
    text-align: right;
 
 
-
+@include breakpoint (toDesktop) {
+	display: none;
+	float: left;
+	text-align: left;
+	 width: 100%;
+}
   @include breakpoint (tablet) {
-    top: 13.5rem;
-      width: 100%;
-       float: left;
-       text-align: left;
+    top: 13.8rem;
+
   }
   @include breakpoint (phone) {
     top: 13rem;
-      width: 100%;
-      float: left;
-      text-align: left;
+
+
   }
 }
+
+
 &__menu {
-  //background-color: $white;
   position: relative;
 
     display: inline-block;
 
     right: 4.5rem;
-  top: 0.3rem;
+  top: 1rem;
 
 
 
@@ -44,14 +45,14 @@
   }
 
   @include breakpoint (tablet) {
-    padding-bottom: 33.3rem;
+    padding-bottom: 33rem;
   }
   @include breakpoint (phone) {
     padding-bottom: 32.4rem;
   }
   &--list-item {
     display: inline-block;
-    padding: 0 0.97rem;
+    padding: 0 1rem;
 
     @include breakpoint (toDesktop) {
       display: block;
@@ -89,13 +90,13 @@ font-size: 1.5rem;
   border-top: 0.2rem solid $black;
   content: "";
   position: absolute;
-  right: -3.2rem;
+  right: -2.8rem;
   top: 0.7rem;
   width: 1.5rem;
 
     @include breakpoint (toDesktop) {
       content: "";
-      border: none;
+      border-top: none;
     }
 
 

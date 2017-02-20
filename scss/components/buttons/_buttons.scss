@@ -5,11 +5,16 @@
 .c-btn {
 	@include borderRadius (5em);
 	font-family: $baseFont;
+	font-weight: bold;
 	font-size: 2rem;
 	line-height: auto;
 	cursor: pointer;
 	&--red {
-		background-color: $cinnabar	;
+		padding: 2rem 10.5rem;
+		background-color: $cinnabar;
 		color:$white;
+		-webkit-box-shadow: -1px 20px 57px 0px $cinnabar;
+		-moz-box-shadow: -1px 20px 57px 0px $cinnabar;
+		box-shadow: -1px 20px 57px 0px $cinnabar;
 	}
 }

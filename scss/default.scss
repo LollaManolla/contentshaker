@@ -24,14 +24,13 @@
 		'blocks/footer/footer',
 		'blocks/teaser/default',
 		'blocks/list/default',
-		'blocks/mostRead/default',
-		'blocks/tagHeader/default';
+		'blocks/mostRead/default';
 
 
 //------COMPONENTS
 @import 'components/buttons/buttons',
-'components/buttons/button.burger',
-'components/buttons/button.loadMore',
+		'components/buttons/button.burger',
+		'components/buttons/button.loadMore',
 		'components/form/articleForm';
 
 //------WIDGETS

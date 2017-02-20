@@ -2,9 +2,77 @@
 //-------------------BLOCK TEASER BIG
 //-------------------------
 &--big {
-padding: 0 6.3rem;
+	position: relative;
+	width: 80%;
+	margin: 2rem auto;
+	.introBox {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+		padding: 6rem;
+		background: $cinnabar;
+	}
+	.imgWrraper {
+		position: relative;
+	}
+	.b-teaser__img {
+		width: 90%;
+	}
+	.b-teaser__title {
+		margin-bottom: 2rem;
+		font-size: 3.1rem;
+		line-height: 1.3;
+		font-weight: bold;
+		color: $white;
 
-@include breakpoint (phone) {
-   padding: 0 5.3rem;
+	}
+	.b-teaser__textIntro {
+		margin-bottom: 7.5rem;
+		font-size: 1.4rem;
+		line-height: 1.3;
+		color: $white;
+	}
+	.b-teaser__tag {
+		margin-bottom: 2.5rem;
+		font-size: 3.9rem;
+		color: $firebrick;
+		&:first-letter {
+			color: $white;
+		}
+	}
+	.b-teaser__author {
+		font-size: 1.2rem;
+		font-weight: bold;
+		color: $white;
+		&::before {
+			display: inline-block;
+			content: "";
+			width: 1.5rem;
+			height: 1.5rem;
+			margin-right: 1.3rem;
+			margin-left: 0.4rem;
+			background: $white;
+			-moz-border-radius: 1.5rem;
+			-webkit-border-radius: 1.5rem;
+			border-radius: 1.5rem;
+			vertical-align: bottom;
+		}
+	}
 }
-}
+
+
+
+.blurDiv {
+	position: absolute;
+    top: 20%;
+    left: 15%;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    height: 80%;
+    opacity: 0.5;
+    box-shadow: inset 25px 5px 100px 65px white;
+	}	
+
+

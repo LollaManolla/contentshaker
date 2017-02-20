@@ -4,9 +4,12 @@
 .b-list {
 
 	@extend .clearfix;
-	margin-left: -1rem;
-    margin-right: -1rem;
+	margin-right: -3.8rem;
 
+	@include breakpoint (toDesktop) {
+		margin-left: -2rem;
+		margin-right: -2rem;
+	}
 
 	@import "article";
 }

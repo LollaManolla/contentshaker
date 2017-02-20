@@ -2,6 +2,23 @@
 //-----------ERROR 404 PAGE
 //-------------------------
 
-.page-error {
-
+.errorPage {
+	padding: 30rem 0;
+	background-image: url('../../../_common/images/404.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	background-size: 100%;
+	&__title {
+		margin-bottom: 2rem;
+		font-size: 4.6rem;
+		font-weight: bold;
+		text-align: center;
+	}
+	&__subtitle {
+		margin-bottom: 5rem;
+		font-size: 2rem;
+		font-weight: bold;
+		text-align: center;
+	}
 }

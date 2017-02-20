@@ -8,23 +8,27 @@
 .article {
 
   @extend .clearfix;
-  width: 25%;
-  float: left;
+
+  display: inline-block;
+  vertical-align: top;
+
 
   min-height: 1px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+
   position: relative;
-  width: 25%;
+ width: 24.4%;
+ padding-right: 1.7rem;
 
   @include breakpoint (toDesktop) {
-    width: 50%;
+	  padding-left: 1.7rem;
+     padding-right: 1.7rem;
+     width: 49.7777%;
   }
 
 
   .article-content {
     margin-top: 1.1rem;
-    margin-bottom:7.3rem;
+ margin-bottom: 5.3rem;
 
     @include breakpoint (tablet) {
       margin-top: 1.5rem;
@@ -42,3 +46,4 @@
   @import "text";
 
 }
+

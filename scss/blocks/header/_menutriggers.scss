@@ -5,17 +5,20 @@
 &__menutriggers {
 	display: none;
 
-	@include breakpoint (tablet) {
+@include breakpoint (toDesktop) {
+	display: block;
 	position: absolute;
+	z-index: 2;
+}
+	@include breakpoint (tablet) {
 	top:7.8rem;
 	right:7rem;
-	z-index: 2;
 }
 
 	@include breakpoint (phone) {
-	position: absolute;
+
 	top:9rem;
 	right:5.4rem;
-	z-index: 2;
+
 }
 }
